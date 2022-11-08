@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A035028-083B-4AF9-9829-BCFA25B0AD6E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ProyectoFinalPrograIV.My.MyApplication</StartupObject>
+    <RootNamespace>ProyectoFinalPrograIV</RootNamespace>
+    <AssemblyName>ProyectoFinalPrograIV</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProyectoFinalPrograIV.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ProyectoFinalPrograIV.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aeropuertos_Administrativo.Designer.vb">
+      <DependentUpon>Aeropuertos_Administrativo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Aeropuertos_Administrativo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aviones_Administrativo.Designer.vb">
+      <DependentUpon>Aviones_Administrativo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Aviones_Administrativo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Itinerario.Designer.vb">
+      <DependentUpon>Itinerario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Itinerario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Itinerarios_Administrativo.Designer.vb">
+      <DependentUpon>Itinerarios_Administrativo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Itinerarios_Administrativo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaClientes_Administrativo.Designer.vb">
+      <DependentUpon>ListaClientes_Administrativo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaClientes_Administrativo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuValidacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuValidacion.Designer.vb">
+      <DependentUpon>MenuValidacion.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Administrativo.Designer.vb">
+      <DependentUpon>Menu_Administrativo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Administrativo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModficarReserva.Designer.vb">
+      <DependentUpon>ModficarReserva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModficarReserva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NuevaReserva_Clientes.Designer.vb">
+      <DependentUpon>NuevaReserva_Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NuevaReserva_Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroNuevo_Clientes.Designer.vb">
+      <DependentUpon>RegistroNuevo_Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroNuevo_Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservas_Clientes.Designer.vb">
+      <DependentUpon>Reservas_Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reservas_Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VueloRegreso.Designer.vb">
+      <DependentUpon>VueloRegreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VueloRegreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Aeropuertos_Administrativo.resx">
+      <DependentUpon>Aeropuertos_Administrativo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aviones_Administrativo.resx">
+      <DependentUpon>Aviones_Administrativo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Itinerario.resx">
+      <DependentUpon>Itinerario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Itinerarios_Administrativo.resx">
+      <DependentUpon>Itinerarios_Administrativo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaClientes_Administrativo.resx">
+      <DependentUpon>ListaClientes_Administrativo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuValidacion.resx">
+      <DependentUpon>MenuValidacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Administrativo.resx">
+      <DependentUpon>Menu_Administrativo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModficarReserva.resx">
+      <DependentUpon>ModficarReserva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevaReserva_Clientes.resx">
+      <DependentUpon>NuevaReserva_Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroNuevo_Clientes.resx">
+      <DependentUpon>RegistroNuevo_Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservas_Clientes.resx">
+      <DependentUpon>Reservas_Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VueloRegreso.resx">
+      <DependentUpon>VueloRegreso.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fids1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp3698896.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %283%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_314150765_q2DxXZrbll9KQhe8KnVCvvFPnvv2NbM4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp4128818.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp3895195.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp36988961.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp36988962.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp36988963.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp36988964.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modelos\Modelos.vbproj">
+      <Project>{93e6a9d7-78e1-4066-9e31-4b57b81d1a7d}</Project>
+      <Name>Modelos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocios\Negocios.vbproj">
+      <Project>{d061ba0e-2c87-4a26-89d3-884086d86087}</Project>
+      <Name>Negocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
